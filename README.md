@@ -1,2 +1,26 @@
-# CS-465
-Full Stack Development I
+Vanessa Escobar
+CS 465
+
+Compare and contrast the types of frontend development you used in your full stack project, including Express HTML, JavaScript, and the single-page application (SPA).
+
+This project utilized two types of frontend development: server-rendered Express HTML with JavaScript and a client side single-page application. From the Express frontend, the server generated whole HTML pages and send the to the Browser for each request. User interactions typically needed a full page reload and most of the processing occured on the server. Javascript was used mainly for limited activity. In contrast, the Angular SPA loads a single page and dynamically updates contentent utilizing components and HTTP calls to the API. Instead of reloading the whole page, it gets and sends data asynchronously which allows for a better more smoother navigation and quicker user interaction. The Express frontend relies more on the server-side rendering, where as the SPA transfers more logic to the client side and transmits with the backend through API endpoints.
+
+Why did the backend use a NoSQL MongoDB database?
+
+The backend used a NoSQL MongoDB database because it saves data in flexible, docoument-based formats that worrl with JavaScript application like Node.js and Express. Because MongoDB uses JSON-like documents, the data is allowed to move between the server and the database without any complicated conversion. The schema design is flexible which makes it easier for modifying or expanding data fields like trip information without the need for restruction of tables. The structure supports efficient development, better scalability, and more straightforward intergration within a full stack JavaScript environment.
+
+How is JSON different from Javascript and how does JSON tie together the frontend and backend development pieces?
+
+JSON is a data format that is lightweight and used to structure and exchange data, where as JavaScript is a full programmming language used to write app logic.  JSON can look similar to JavaScript objects, JSON is purely text-based. JavaScript includes functions, variables, control structures, and executable code. On the other hand, JSON only supports data representations like key value pairs and arrays. Basically, JSON stores data while JavaScipt processes and manipulates data. JSON ties together both ends of the application by acting as a standarized format for data exchange. When the Angular frontend sends a call to the Express backend, the server gets or changes the information in the MongoDB and returns the data in JSON format. The frontend then parses that JSON data and utilizes it to dynamically refresh the user interface. Since both the client and server utilize JavaScript, JSON is great for providing a consitent way to transmit data between the browser, server, and database layers.
+
+Provide instances in the full stack process when you refactored code to improve functionality and efficiencies, and name the benefits that come from reusable user interface (UI) components.
+
+During development some of the code had to be reorganized in order to make it more clean and efficient. On the backend, routes and logic were seperated to avoid any redundant code. On the frontend, repeated trip display sections were changed into reusable component, and API calls were placed in a service instead of inside each component. Resuable Ui components are great for keeping the design consistent across the app. Making updates is also easier since changes only need to made once. This greatly reduces the chances for duplicate code and makes it easier for the app to expand and manage.
+
+Methods for request and retrieval necessitate various types of API testing of endpoints, in addition to the difficulties of testing with added layers of security. Explain your understanding of methods, endpoints, and security in a full stack application.
+
+In a full stack application, methods are the HTTP actions that are used in order to communicate and interact with the server such as GET, POST, PUT, and DELETE. These methods are sent to endpoints which are backend routes such as like /api/trips. Each endpoint attaches to server logic that processes the call and communicates with the database. API testing ensures the correct operation from each method is being performed and gives back its anticipated response. Security adds some additional requirements to API testing, such as requiring authentication before access is granted. This structure guarantees that only authorized users can change or delete any data. When testing secured endpoints, its essential to verify that only valid users are granted access while unauthorized users are denied. 
+
+How has this course helped you in reaching your professional goals? What skills have you learned, developed, or mastered in this course to help you become a more marketable candidate in your career field?
+
+This course has assisted me in strengthening my skills when it comes to full stack development and I can now better understand how the frontend, backend, and databases all work together and comminucate. I got to gain the hands-on experience of building a complete web app that utilized Angular, Express, and MongoDB. This improved my ability to design APIs and manage data, as well as connect client and server components. I also developed stronger problem solving and debugging skills through testing and refactoring code. I believe these skills make me more marketable by demonstrating that I can build, organize, and maintain modern web apps across multipls layers of a system. 
